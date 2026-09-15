@@ -1,5 +1,6 @@
 services:
   web:
+    image: onelie06/brew-and-bean:latest
     build: .
     ports:
       - "5000:5000"
