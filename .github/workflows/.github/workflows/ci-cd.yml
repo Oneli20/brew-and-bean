@@ -1,4 +1,4 @@
-name: Brew and Bean CI/CD Test
+name: Brew and Bean CI/CD Test 1
 
 on:
   push:
