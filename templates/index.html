@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean Coffee</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">☕ Brew & Bean</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO BREW & BEAN</p>
+
+            <h1>Freshly Brewed.<br>Made With Love.</h1>
+
+            <p>
+                Discover your perfect cup of coffee,
+                freshly prepared just for you.
+            </p>
+
+            <a href="#menu" class="button">View Our Menu</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            At Brew & Bean, we believe every cup of coffee
+            should bring a little happiness to your day.
+            We serve freshly brewed coffee, delicious snacks
+            and sweet treats in a warm and relaxing atmosphere.
+        </p>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+
+        <p class="small-title">OUR MENU</p>
+
+        <h2>Our Favourite Drinks</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <div class="coffee-icon">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with creamy milk foam.</p>
+                <h4>Rs. 750</h4>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="coffee-icon">☕</div>
+                <h3>Café Latte</h3>
+                <p>Smooth espresso with steamed milk.</p>
+                <h4>Rs. 800</h4>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="coffee-icon">☕</div>
+                <h3>Americano</h3>
+                <p>Classic espresso with hot water.</p>
+                <h4>Rs. 650</h4>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="coffee-icon">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft and delicious chocolate cake.</p>
+                <h4>Rs. 900</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order -->
+    <section id="order" class="order">
+
+        <p class="small-title">ORDER NOW</p>
+
+        <h2>Place Your Order</h2>
+
+        <form action="/order" method="POST">
+
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+
+            <label>Select Your Coffee</label>
+
+            <select name="coffee" required>
+                <option value="">Choose a drink</option>
+                <option value="Cappuccino">Cappuccino - Rs. 750</option>
+                <option value="Café Latte">Café Latte - Rs. 800</option>
+                <option value="Americano">Americano - Rs. 650</option>
+                <option value="Chocolate Cake">Chocolate Cake - Rs. 900</option>
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input
+                type="number"
+                name="quantity"
+                min="1"
+                max="10"
+                value="1"
+                required
+            >
+
+
+            <button type="submit">Place Order ☕</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Visit Brew & Bean</h2>
+
+        <p>📍 Colombo, Sri Lanka</p>
+        <p>📞 +94 77 123 4567</p>
+        <p>✉️ hello@brewandbean.com</p>
+
+        <p class="opening">
+            Open every day: 8.00 AM – 9.00 PM
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Brew & Bean Coffee. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
